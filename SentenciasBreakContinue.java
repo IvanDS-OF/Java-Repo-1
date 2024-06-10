@@ -16,7 +16,7 @@ public class SentenciasBreakContinue {
             //Para hacer uso correcto de la sentenci Break podemos hacer uso de una condicional If
             if (Incremento == 10) {
                 System.out.println("Ya llevamos a 10 pa, fuga");
-                break;
+                break; //Tan sencillo como colocar la palabra reservada CBREAK
             }
 
         }
@@ -27,7 +27,15 @@ public class SentenciasBreakContinue {
         
         
         //Continue sirve para continuar una sentencia ciclica dad una condicion determinada en un punto determinado 
-
+        //Vamos a mostrar los numero paras del 1 al 100
+        for (int i = 1; i < 100; i++) {
+            if (i % 2 != 0) {
+                //Igualmente se puede mandar a llamar mediante una secuencia IF. 
+                continue;
+                //La sentencia esta siempre delimitada por los {} Brackets 
+            }            
+            System.out.println("Current Number: " + i);
+        }
         
 
 
