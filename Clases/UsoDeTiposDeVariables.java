@@ -21,6 +21,14 @@ public class UsoDeTiposDeVariables {
 
         var UserResponse = scanner.nextInt();
 
+        //Restricciones 
+        //Es necesario INICIALIZAR la variable en ese momento, y no despues
+        //Dado que es necesario incializar la variable, NO se pueden declarar varias vavriables en la misma linea
+        //No se puede inicializar una variable como Null
+        //No se puede inicializar con un inicializador de Array
+        
+
+
         
 
 
