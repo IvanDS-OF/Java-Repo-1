@@ -1,7 +1,7 @@
 public class ObjetosCuentaBancaria {
     //Antes de colocar nuestro constructor Main, vamos a colocar nuestros parametros del objeto a crear
     String Titular;
-    String TipoDeCuenta;
+    EnumeracionClase TipoDeCuenta;
     double Saldo; 
 
     //En ocaciones es necesario  tener algunas valores por defecto, como si fuereren DropDown
