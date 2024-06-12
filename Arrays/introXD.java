@@ -29,7 +29,24 @@ public class introXD {
         //Experimento sencillo pa
         String a[] = {"a", "b", "c", "d"};
         System.out.println("una letera: " + a[0]);
+        //Lo anterior fueron arreglos de una dimension VECTORES:::
 
+
+        /* VAMOS A VER MATRICES :D */
+
+        //Para inicializar un array de 2 dimensiones lo vamos a hacer como en Arduino
+        int arrayDosDim[][] = new int[3][3];
+        int arrayTresDim[][][] = new int[3][3][3];
+
+        //Para llenar los valores hay varias formas, una es añadiendo valor por valor
+        //y otra es mediante el uso de un ciclo for
+        for (int i = 0; i < arrayDosDim.length; i++) {
+            for (int j = 0; j < arrayDosDim.length; j++) {
+                arrayDosDim[i][j] = i * j;
+            }            
+        }
+
+        System.out.println("Valor deseado" + arrayDosDim[2][2]);
 
     }
 }
