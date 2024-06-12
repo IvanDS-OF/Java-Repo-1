@@ -48,5 +48,7 @@ public class introXD {
 
         System.out.println("Valor deseado" + arrayDosDim[2][2]);
 
+        System.out.println(arrayDosDim);
+
     }
 }
