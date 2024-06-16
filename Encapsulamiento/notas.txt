@@ -16,7 +16,8 @@ Protected
 
 
 
-
+//No hay prolema en crear una clase con el mismo nombre dentro de un proyecto 
+Siempre y cuendo pertenezcan a diferente package
 
 
 
