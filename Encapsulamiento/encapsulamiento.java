@@ -3,7 +3,7 @@ public class encapsulamiento {
         //El encapsulamiento sirve para blindar el contenido de nuestras clases 
         //de otras externas a estas
         //La unica forma para interactuar con nuestra clase creada tiene que se
-        //mediante los metodos publicos
+        //mediante los  metodos publicos
 
         //Esta seguridad se puede alcanar mediante diferentes niveles
         //Con los modificadores de acceso 
