@@ -1,6 +1,6 @@
-package com.ivanduran.banco;
+package com.ivanduran.cajero;
 
-public class banco {
+public class UnObjetoXd {
     public static void main(String[] args) {
         System.out.println("Hello world!");
     }
