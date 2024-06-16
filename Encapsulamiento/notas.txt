@@ -23,7 +23,9 @@ Siempre y cuendo pertenezcan a diferente package
 
 
 
-
+Una variable esta tica es una variable que pertenece a la clase 
+Por lo que solo existe una copia de la misma que se comparte
+por todas las instancias de esa clase
 
 
 
