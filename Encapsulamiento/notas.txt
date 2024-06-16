@@ -1,0 +1,43 @@
+Existen 3 tipos de paquetes
+
+Public
+
+Private - Son los mas restringidos y solamente podemos tener acceso a ellos desde dentro de metodos 
+o constructores de esa misma clase
+Idealmente todas las variables de instancia deberian ser privadas
+Para que no sea posible acceder y modificar las variables de instancia desde una clase externa
+es necesario colocar la palara **private** antes de cada una de las variables a la hora de crearlas
+
+
+Protected
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
