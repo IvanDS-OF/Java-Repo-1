@@ -34,6 +34,11 @@ public class Main {
 
 
         //Pero no ocurre lo mismo en las variables de clase NO
+        //Cuando modificamos alguna de nuestras variables de clase se va a modificar para todas las veces que sea usado
+        Hermano.apellido = "Santos";
+        System.out.println("Nombre del menor es: " + hermanoMenor.nombre + " y el apellido es: " + Hermano.apellido);
+        System.out.println("Nombre del mayor es: " + hermanoMayor.nombre + " y el apellido es: " + Hermano.apellido);
+
 
 
 

@@ -27,6 +27,18 @@ Una variable esta tica es una variable que pertenece a la clase
 Por lo que solo existe una copia de la misma que se comparte
 por todas las instancias de esa clase
 
+Las variables de instancia se pueden ir modificando con el tiempo sin repercutir en otras instancias
+mientras que las variables de instancia estaticas si tienen repercuciones en otras llamadas
+Por lo que es importante y necesario reconcoer en qué momento son necesarias las variables de instancia
+
+//Un uso bueno y frecuente de las variables de instancia son aquellos en donde podmeos tener algunas constantes
+delcaradas y que afectan a todo el cpdigo que las llama en un solo movimiento. Las famosas variables Finals
+Y asi como hay variables estaticas, hay etodos estaticos que nos sirven para modificas las variables estaticas 
+
+
+
+
+
 
 
 
