@@ -34,6 +34,44 @@ Y asi como hay variables estaticas, hay etodos estaticos que nos sirven para mod
 
 
 Clases internas
+Nos sirven para hacer modificaciones de las propiedades de la clase externa
+
+
+
+
+
+
+MODULOS
+son agrupaciones de paquetes y otros recursos como imagenes o archivos XML
+ocn un identificador unico
+Cada modulo incluye un DESCRIPTOR que indica su nombre, sus dependencias
+Inidica los servicios que ofrece, los ervicios que consume y a qué modulos 
+ofrece alguna reflexion
+REFLEXION - Leer metadatos de una clase que de otro modo estarían oculos
+    Sirven para
+Configuracion confiable
+Encapsulacion fuerte
+Plataformaescalable
+Mayor integridad de la Plataformaescalable
+Rendimiento mejorado
+*Posterior a crear unmodulo con la sintaxis correcta, podemos hacer uso de las siguientes Directivas 
+requires - Especifica que este modulo depende de otro modulo
+requires transitive - Especifica que otros modulos que lean este modulo tambien seran capaces de leer esta dependencias
+exports - Especifica los paquetes del modulo cuyos tipos publicos seran accesibles por otrso modulos
+exports...to - Permite especificar a que modulos se les permite acceder a estos paquetes
+uses - Permite especificar un servicio usado por este modulo
+(Los servicios se definen mediante INTERFACES o CLASES ABSTRACTAS) 
+provides...with - Especifica que el modulo provee de la impementacion de un servicio
+open, opens y opens...to  - 
+
+
+
+
+
+
+
+
+
 
 
 
