@@ -13,13 +13,8 @@ Protected
 
 
 
-
-
-
 //No hay prolema en crear una clase con el mismo nombre dentro de un proyecto 
 Siempre y cuendo pertenezcan a diferente package
-
-
 
 
 
@@ -38,6 +33,7 @@ Y asi como hay variables estaticas, hay etodos estaticos que nos sirven para mod
 
 
 
+Clases internas
 
 
 
