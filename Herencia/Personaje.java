@@ -1,8 +1,16 @@
+package Herencia;
+
 public class Personaje {
     //La clase Personaje es nuestra supereclase
-    private int puntosDeVida = 100;
-    private int posicionX = 0;
-    private int posicionY = 0;
+    protected int puntosDeVida = 100;
+    protected int posicionX = 0;
+    protected int posicionY = 0;
+
+    //Revisar las notas de construcor
+    public Personaje(int posicionX, int posicionY){
+        this.posicionX = posicionX;
+        this.posicionY = posicionY;
+    }
 
     public void recibirDano(int puntosMenos){
         puntosDeVida = puntosDeVida - puntosMenos;

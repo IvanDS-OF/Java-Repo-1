@@ -1,5 +1,16 @@
 Java nos permite hacer uso del concepto de herencia mediante la extension de clases
 
+Cuando extendemos una clase, estamos extendiendo igualmente las funcionalidades a una otra nueva clase
+
+Claramente esto hace que podamos re usar el codigo y sea mas facil mantener y evolucionar
+
+En Java tenemos la Superclase y la Subclase
+
+
+
+*********** Constructores
+Cuando tenemos una superclase y una Subclase y ningua de las dos ha creado un constructor, Java
+colocara un constructor por defecto
 
 
 
