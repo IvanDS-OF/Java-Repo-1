@@ -1,0 +1,7 @@
+Java nos permite hacer uso del concepto de herencia mediante la extension de clases
+
+
+
+
+
+
