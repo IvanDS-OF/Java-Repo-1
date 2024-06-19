@@ -51,3 +51,19 @@ heredar de esta
 
 
 
+
+
+//INTERFACES
+Conjunto de metodos a los que una instancia de una clase respondera 
+Podriamos decir que la interfaz de una clase es el CONJUNTO DE SUS METODOS PUBLISCO  
+
+Una Interfaz especifica qué acciones puede ejecutar una instancia PERO  no especifica
+la manera en que se implementaran esas acciones
+
+
+
+
+
+
+
+
