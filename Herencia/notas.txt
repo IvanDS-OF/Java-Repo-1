@@ -14,5 +14,14 @@ colocara un constructor por defecto
 
 
 
+Jerarquia
+Java no permite que una subClase sea hija de multiples SuperClases
+Pero si es posible hacerlo de la manera invera
+Y de igual manera es posible hacer que una subclase sea una Superclase
+
+
+
+
+
 
 
