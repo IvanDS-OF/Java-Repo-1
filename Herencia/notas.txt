@@ -24,4 +24,30 @@ Y de igual manera es posible hacer que una subclase sea una Superclase
 
 
 
+//CLASES OBJECT
+La clase Object es la SUPER CLASE de todas las demas
+
+
+
+
+
+//Clases Abstractas 
+Nos permiten implemetnar el polimorfismo :D
+Nos permite crear clases diferentes de comparten los mismos metodos publicos
+y es imporatnte porque facilita la modularidad en la programacion OO
+
+Sirven para dar cuarpo a otras clases con solamente indicando los metodos
+que las subclases deberian de tener pero que es forzosamente necesario modificar
+
+El declarar un metodo como Abstrac obliga a las subclases a implementarlo
+el efecto contrario sería declararlo como Final
+
+Un metodo declarado como Final no puede ser sobreescrito
+Así como con las clases, las podemos declarar como Final y así ninguna clase podra 
+heredar de esta
+
+
+
+
+
 
