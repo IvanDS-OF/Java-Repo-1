@@ -1,1 +1,21 @@
 Esta es una nota 
+
+
+Cuando delcaramos unas constantes
+Es necesario hacer uso de las palabras clave *static y *final a su delcaracion
+static : Sirve para NO necesitar un objeto para poder usarlo 
+final - Es para que ese valor sea irremplazable
+
+Name Convention
+nombreMetodo() - Camell case con ()
+nombreVariable - Camell case 
+NombreDeClase - Pascal case 
+NOMBRE_DE_CONSTANTE - Full Upper case 
+
+
+
+
+
+
+
+
