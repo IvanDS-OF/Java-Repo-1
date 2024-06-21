@@ -26,7 +26,7 @@ public class Ejercicio06d {
 
             i++;
 
-            System.out.println("This is my current position: " + i);
+            //System.out.println("This is my current position: " + i);
 
         }
 
