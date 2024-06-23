@@ -1,3 +1,4 @@
+package PracticasIniciacion;
 import java.util.Scanner;
 
 public class KeyGenerator {
