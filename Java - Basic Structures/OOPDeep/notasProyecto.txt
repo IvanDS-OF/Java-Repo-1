@@ -1,0 +1,92 @@
+We need to create a simple app, we should consider the next concepts
+
+Names: 
+    Product
+    Order
+    Supermarket
+    Container type
+    Container 
+    Bag
+    Box
+    Weight
+    Resistance
+    Volume
+    Dimension
+    Size
+    Categories
+
+Verbs
+    To manage
+    To Bag - embolsar 
+    to pack
+    to mix
+
+Values
+    Square
+    Feeding
+    Hygiene
+    Drugs
+    Pets
+    Freeze
+    Fresh
+    Non perishable
+    Busy
+
+
+///
+Containters - Bags or Boxes 
+
+Products  - Feeding, Drugs, Hygiene, Pets, 
+            |Fresh, Freeze, non perishable
+
+
+******
+UML
+Unifies Modeling Languaje
+
+
+
+
+
+
+
+//NOTES ABOUT OBJECTS
+The first we must do is analyze this text and recognize the sustantives and the Verbsshown in the same one
+The *Sustantives could be or not out future **CLASES and their **ATRIBUTES. Mieanwhile the verbs could be or not
+out future **METHODS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
