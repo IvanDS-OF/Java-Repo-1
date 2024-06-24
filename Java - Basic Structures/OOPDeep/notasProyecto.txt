@@ -57,7 +57,11 @@ out future **METHODS
 
 
 
-
+HOw to mane the Packages? 
+We should start with the Domain of out enterprise but in its inverse way
+Essempio: 
+Domain - MyEnt.com 
+Package name - com.MyEnt
 
 
 
