@@ -19,13 +19,13 @@ public class Pets extends Product {
     @Override
     public boolean isCompatible(IProduct p) {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'isCompatible'");
+        return false;
     }
 
     @Override
     public boolean haveSpace(IContainer container) {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'haveSpace'");
+        return false;
     }
     
 }

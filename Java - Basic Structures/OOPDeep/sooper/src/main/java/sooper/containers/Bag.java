@@ -1,5 +1,6 @@
 package sooper.containers;
 
+import sooper.IContainer;
 import sooper.enums.ContainerType;
 
 public class Bag extends Container {
@@ -28,6 +29,11 @@ public class Bag extends Container {
     @Override
     public ContainerType getType() {
         return ContainerType.BAG;
+    }
+
+    @Override
+    public void add(IContainer containers) {
+        containers.add(containers);;
     }
     
 

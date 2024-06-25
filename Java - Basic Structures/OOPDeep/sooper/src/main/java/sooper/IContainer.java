@@ -28,6 +28,8 @@ public interface IContainer {
 
     boolean resists(IProduct product);
 
+    void add(IContainer containers);
+
 
 
 
