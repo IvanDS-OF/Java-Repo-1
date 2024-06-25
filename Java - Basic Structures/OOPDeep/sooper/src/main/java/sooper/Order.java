@@ -32,8 +32,8 @@ public class Order implements IOrder{
     }
 
     @Override
-    public void addContainter(IContainer containers) {
-        containers.add(containers);
+    public void addContainter(IContainer container) {
+        containers.add(container);
     }
 
     @Override
