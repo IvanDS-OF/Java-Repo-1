@@ -10,7 +10,9 @@ public interface IContainer {
     String getReference();
 
     //Declase all the methods 
-    int getColumn();
+    int getVolume();
+
+    int getSurface();
 
     int avaliableVolume();
 

@@ -65,6 +65,14 @@ Package name - com.MyEnt
 
 
 
+//Interfaces
+When creating an Interface in Java, this one is completely abstraction
+But there are some times that we dont know how to fill the information of our Interface when we are
+creating a new class. We can solve this issua by using Abstract Interfaces. 
+That creates the body of the known things and the unknown things can wait.
+
+
+
 
 
 
