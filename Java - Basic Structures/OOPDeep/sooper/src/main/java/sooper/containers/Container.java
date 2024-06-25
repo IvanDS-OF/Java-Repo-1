@@ -29,8 +29,7 @@ public abstract class Container implements IContainer {
 
     @Override
     public String getReference() {
-        // TODO Auto-generated method stub
-        return null;
+        return reference;
     }
 
     //If we implement this class as Abstract, it is not necesary ti call all the methods

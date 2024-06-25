@@ -5,8 +5,8 @@ public class Box extends Container{
     //We need to create the constructor
     //All the arguments that we need to create correctly the object of this class
 
-    private static int length;
-    private static int width;
+    private int length;
+    private int width;
 
     public Box(String reference, int height, int length, int width){
         //Remember, to call the variables of our SuperClass we should call in this way;

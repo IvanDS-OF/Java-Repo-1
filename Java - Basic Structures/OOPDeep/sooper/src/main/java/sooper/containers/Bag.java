@@ -3,8 +3,7 @@ package sooper.containers;
 public class Bag extends Container {
 
     //First we write the variaables to create correctly our cinstructor
-    private static int length;
-    private static int width;
+    private int length;
 
     public Bag(String reference, int height, int length, int width){
         //Initialize the extern constructor
