@@ -1,5 +1,7 @@
 package sooper.products;
 
+import sooper.enums.CategoryType;
+
 import sooper.IContainer;
 import sooper.IProduct;
 
@@ -11,8 +13,8 @@ public class Drug extends Product {
     }
 
     @Override
-    public String getCategory() {
-        return "Drug";
+    public CategoryType getCategory() {
+        return CategoryType.DRUGS;
     }
 
     @Override

@@ -1,5 +1,7 @@
 package sooper;
 
+import sooper.enums.CategoryType;
+
 public interface IProduct {
     //What do we whant to know about the product? 
     //Remember all the notes that we wrote before by analyzing the whole requeriment 
@@ -11,7 +13,7 @@ public interface IProduct {
 
     int getVolume();
 
-    String getCategory();
+    CategoryType getCategory();
 
     boolean isCompatible(IProduct p);
 

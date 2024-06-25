@@ -2,6 +2,7 @@ package sooper.products;
 
 import sooper.IContainer;
 import sooper.IProduct;
+import sooper.enums.CategoryType;
 
 public class Feeding extends Product{
 
@@ -12,8 +13,8 @@ public class Feeding extends Product{
 
 
     @Override
-    public String getCategory() {
-        return "Feeding";
+    public CategoryType getCategory() {
+        return CategoryType.FEEDING;
     }
 
     @Override

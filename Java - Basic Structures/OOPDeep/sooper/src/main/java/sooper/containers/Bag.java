@@ -1,18 +1,18 @@
 package sooper.containers;
 
+import sooper.enums.ContainerType;
+
 public class Bag extends Container {
 
     //First we write the variaables to create correctly our cinstructor
     private int length;
 
-    public Bag(String reference, int height, int length, int width){
+    public Bag(String reference, int height, int length){
         //Initialize the extern constructor
         super(reference, height);
 
         //Then we define the internal cariavles within this constructor
         this.length = length;
-        this.width = width;
-
     }
 
     @Override
@@ -26,8 +26,8 @@ public class Bag extends Container {
     }
 
     @Override
-    public String getType() {
-        return "Bag";
+    public ContainerType getType() {
+        return ContainerType.BAG;
     }
     
 

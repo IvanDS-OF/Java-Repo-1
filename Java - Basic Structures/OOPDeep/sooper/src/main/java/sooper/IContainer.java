@@ -2,6 +2,8 @@ package sooper;
 
 import java.util.Set;
 
+import sooper.enums.ContainerType;
+
 public interface IContainer {
     
     //I this phase we should name all the this that we can obtain from our final object
@@ -20,7 +22,7 @@ public interface IContainer {
 
     Set<IProduct> getProductos();
 
-    String getType();
+    ContainerType getType();
 
     boolean meter(IProduct product);
 

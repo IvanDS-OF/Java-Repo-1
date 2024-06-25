@@ -1,5 +1,7 @@
 package sooper.containers;
 
+import sooper.enums.ContainerType;
+
 public class Box extends Container{
 
     //We need to create the constructor
@@ -22,8 +24,8 @@ public class Box extends Container{
     }
 
     @Override
-    public String getType() {
-        return "box";
+    public ContainerType getType() {
+        return ContainerType.BOX;
     }
     
 }
