@@ -1,14 +1,12 @@
 package sooper.products;
 
-import sooper.IContainer;
 import sooper.IProduct;
 import sooper.enums.CategoryType;
 
 public class Feeding extends Product{
 
-    public Feeding(String reference, int volume, int weight) {
+    public Feeding(String reference, int weight, int volume) {
         super(reference, volume, weight);
-        //TODO Auto-generated constructor stub
     }
 
 
@@ -22,10 +20,5 @@ public class Feeding extends Product{
         return CategoryType.FEEDING.equals(p.getCategory());
     }
 
-    @Override
-    public boolean haveSpace(IContainer container) {
-        // TODO Auto-generated method stub
-        return false;
-    }
     
 }

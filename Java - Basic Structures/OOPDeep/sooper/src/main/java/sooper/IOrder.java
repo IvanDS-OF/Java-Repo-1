@@ -18,7 +18,7 @@ public interface IOrder {
     //We want to add Containers to our Order
     //We dont put acctions, because we are just declaring the method, not the actions. 
 
-    IContainer addProduct (IProduct producto);
+    IContainer addProduct (IProduct product);
     //We eant to add products, and wach container should have this information.
 
 

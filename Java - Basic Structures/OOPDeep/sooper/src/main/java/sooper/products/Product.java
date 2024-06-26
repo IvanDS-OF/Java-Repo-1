@@ -2,8 +2,6 @@ package sooper.products;
 
 import sooper.IContainer;
 import sooper.IProduct;
-import sooper.containers.Container;
-import sooper.enums.CategoryType;
 
 public abstract class Product implements IProduct{
 

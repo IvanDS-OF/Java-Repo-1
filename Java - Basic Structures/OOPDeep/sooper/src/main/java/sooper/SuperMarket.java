@@ -14,7 +14,7 @@ public class SuperMarket {
         //Lets to create all the required
         Order myOrder = new Order("Pedido 001");
 
-        IContainer bag1 = new Bag("B001", 40, 25);
+        IContainer bag1 = new Bag("B001", 40, 25, 0);
         IContainer box1 = new Box("C001", 30, 50, 75);
         
         myOrder.addContainter(bag1);

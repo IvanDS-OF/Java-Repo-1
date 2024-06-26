@@ -5,7 +5,6 @@ import java.util.Set;
 
 import sooper.IContainer;
 import sooper.IProduct;
-import sooper.enums.ContainerType;
 
 public abstract class Container implements IContainer {
 
@@ -26,16 +25,17 @@ public abstract class Container implements IContainer {
     private Set<IProduct> products;
 
 
-    public Container(String reference, int height){
+    public Container(String reference, int height, int resistance){
         this.reference = reference;
         this.height = height;
+        this.resistance = resistance;
         products = new HashSet<IProduct>();
 
     }
 
 
     @Override
-    public String getReference() {
+    public String getReference() {  // A
         return reference;
     }
 
@@ -44,24 +44,22 @@ public abstract class Container implements IContainer {
     //that work will be done by the final SubClasses
 
     @Override
-    public int getVolume() {
+    public int getVolume() { // A
         return height * getSurface();
     }
 
     @Override
-    public int getResistance() {
-        // TODO Auto-generated method stub
-        return 0;
+    public int getResistance() { // A
+        return resistance;
     }
 
     @Override
-    public Set<IProduct> getProductos() {
-        // TODO Auto-generated method stub
-        return null;
+    public Set<IProduct> getProducts() { // A
+        return products;
     }
 
     @Override
-    public boolean putInside(IProduct product) {
+    public boolean putInside(IProduct product) { // A
         boolean resistanceOk = resists(product);
         boolean volumeOk = product.haveSpace(this);
         boolean compatibilityOk = true;
@@ -71,7 +69,7 @@ public abstract class Container implements IContainer {
 
         for (IProduct p : products) {
             boolean compatibleOk = product.isCompatible(p);
-            compatibilityOk = compatibilityOk && compatibleOk; 
+            compatibilityOk &= compatibleOk; 
         }
 
         boolean acceptance = resistanceOk && volumeOk && compatibilityOk;
@@ -79,9 +77,8 @@ public abstract class Container implements IContainer {
         if (acceptance) {
             products.add(product);
             product.putInside(this);
-
         }
-        return false;
+        return acceptance; //First change found
     }
 
     @Override
@@ -90,12 +87,24 @@ public abstract class Container implements IContainer {
     }
 
 
+    private int takenVolume(){ // A
+        int res = 0;
+        for (IProduct p : products) {
+            res += p.getVolume();
+        }
+        return res;
+    }
 
     @Override
-	public String toString() {
+    public int avaliableVolume() { // A
+        return getVolume() - takenVolume();
+    }
+
+
+	public String toString() { // A
 
 		StringBuilder sb = new StringBuilder("Contenedor " + reference + " [" + getType() +
-				"] (sup " + getSurface() + "cm2 - vol " + getVolume() + "cm3 - resistencia " + getResistance() + " g).\n");
+				"] (sup " + getSurface() + " cm2 - vol " + getVolume() + " cm3 - resistencia " + getResistance() + " g).\n");
 		if (products.isEmpty()) {
 			sb.append("\t\tvacío\n");
 		}
@@ -108,23 +117,6 @@ public abstract class Container implements IContainer {
 
 
 
-    private int takenVolume(){
-        int res = 0;
-        for (IProduct p : products) {
-            res = res + p.getVolume();
-        }
-        return res;
-    }
-
-    @Override
-    public int avaliableVolume() {
-        return getVolume() - takenVolume();
-    }
-
-
-
-    
- 
 
 
 }

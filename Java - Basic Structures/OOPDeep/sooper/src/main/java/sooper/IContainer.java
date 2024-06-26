@@ -20,15 +20,13 @@ public interface IContainer {
 
     int getResistance();
 
-    Set<IProduct> getProductos();
+    Set<IProduct> getProducts();
 
     ContainerType getType();
 
     boolean putInside(IProduct product);
 
     boolean resists(IProduct product);
-
-    void add(IContainer containers);
 
 
 

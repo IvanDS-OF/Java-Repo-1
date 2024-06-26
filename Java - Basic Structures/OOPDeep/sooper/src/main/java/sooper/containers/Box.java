@@ -1,6 +1,5 @@
 package sooper.containers;
 
-import sooper.IContainer;
 import sooper.IProduct;
 import sooper.enums.ContainerType;
 
@@ -14,7 +13,7 @@ public class Box extends Container{
 
     public Box(String reference, int height, int length, int width){
         //Remember, to call the variables of our SuperClass we should call in this way;
-        super(reference, height); //This could return an error because we havent defined this 
+        super(reference, height, 0); //This could return an error because we havent defined this 
         //constructor within our SuperClass -- Container
         this.length = length;
         this.width = width;
@@ -30,12 +29,6 @@ public class Box extends Container{
         return ContainerType.BOX;
     }
 
-    @Override
-    public void add(IContainer containers) {
-        // TODO Auto-generated method stub
-        containers.add(containers);
-    }
-    
     @Override
     public boolean resists(IProduct product){
         return true;

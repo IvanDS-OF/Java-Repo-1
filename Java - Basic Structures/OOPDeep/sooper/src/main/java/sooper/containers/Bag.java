@@ -1,7 +1,5 @@
 package sooper.containers;
 
-import sooper.IContainer;
-import sooper.IProduct;
 import sooper.enums.ContainerType;
 
 public class Bag extends Container {
@@ -9,9 +7,9 @@ public class Bag extends Container {
     //First we write the variaables to create correctly our cinstructor
     private int length;
 
-    public Bag(String reference, int height, int length){
+    public Bag(String reference, int height, int length, int resistance){
         //Initialize the extern constructor
-        super(reference, height);
+        super(reference, height, resistance);
 
         //Then we define the internal cariavles within this constructor
         this.length = length;
@@ -32,15 +30,6 @@ public class Bag extends Container {
         return ContainerType.BAG;
     }
 
-    @Override
-    public void add(IContainer containers) {
-        containers.add(containers);;
-    }
-    
-    @Override
-    public boolean resists(IProduct product){
-        return false;
-    }
 
 
 }
