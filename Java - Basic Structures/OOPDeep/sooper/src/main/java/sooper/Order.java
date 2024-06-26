@@ -23,7 +23,16 @@ public class Order implements IOrder{
 
     @Override
     public Set<IProduct> getProducts() {
-        return null;
+        //This could be a little more difficult. 
+        Set<IProduct> products = null;
+        for (IContainer c : containers) {
+            if (products == null) {
+                products = c.getProducts();
+            } else {
+                products.addAll(c.getProducts());
+            }
+        }
+        return products;
     }
 
     @Override
