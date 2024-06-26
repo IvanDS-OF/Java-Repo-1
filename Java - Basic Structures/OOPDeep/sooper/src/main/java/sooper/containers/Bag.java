@@ -1,6 +1,7 @@
 package sooper.containers;
 
 import sooper.IContainer;
+import sooper.IProduct;
 import sooper.enums.ContainerType;
 
 public class Bag extends Container {
@@ -36,6 +37,10 @@ public class Bag extends Container {
         containers.add(containers);;
     }
     
+    @Override
+    public boolean resists(IProduct product){
+        return false;
+    }
 
 
 }

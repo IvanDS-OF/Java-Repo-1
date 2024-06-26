@@ -5,6 +5,7 @@ import java.util.Set;
 
 import sooper.IContainer;
 import sooper.IProduct;
+import sooper.enums.ContainerType;
 
 public abstract class Container implements IContainer {
 
@@ -48,12 +49,6 @@ public abstract class Container implements IContainer {
     }
 
     @Override
-    public int avaliableVolume() {
-        // TODO Auto-generated method stub
-        return 0;
-    }
-
-    @Override
     public int getResistance() {
         // TODO Auto-generated method stub
         return 0;
@@ -66,15 +61,32 @@ public abstract class Container implements IContainer {
     }
 
     @Override
-    public boolean meter(IProduct product) {
-        // TODO Auto-generated method stub
+    public boolean putInside(IProduct product) {
+        boolean resistanceOk = resists(product);
+        boolean volumeOk = product.haveSpace(this);
+        boolean compatibilityOk = true;
+
+        //To know the answer of conpatibleOk we need to loop through the 
+        //products inside the current container 
+
+        for (IProduct p : products) {
+            boolean compatibleOk = product.isCompatible(p);
+            compatibilityOk = compatibilityOk && compatibleOk; 
+        }
+
+        boolean acceptance = resistanceOk && volumeOk && compatibilityOk;
+
+        if (acceptance) {
+            products.add(product);
+            product.putInside(this);
+
+        }
         return false;
     }
 
     @Override
     public boolean resists(IProduct product) {
-        // TODO Auto-generated method stub
-        return false;
+        return resistance > product.getWeight();
     }
 
 
@@ -93,6 +105,22 @@ public abstract class Container implements IContainer {
 		sb.append("\t\t>> Disponible vol " + avaliableVolume() + "cm3");
 		return sb.toString();
 	}
+
+
+
+    private int takenVolume(){
+        int res = 0;
+        for (IProduct p : products) {
+            res = res + p.getVolume();
+        }
+        return res;
+    }
+
+    @Override
+    public int avaliableVolume() {
+        return getVolume() - takenVolume();
+    }
+
 
 
     

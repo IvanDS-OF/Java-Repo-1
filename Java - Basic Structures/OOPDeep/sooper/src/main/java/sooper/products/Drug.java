@@ -19,8 +19,7 @@ public class Drug extends Product {
 
     @Override
     public boolean isCompatible(IProduct p) {
-        // TODO Auto-generated method stub
-        return false;
+        return CategoryType.DRUGS.equals(p.getCategory());
     }
 
     @Override
@@ -28,5 +27,7 @@ public class Drug extends Product {
         // TODO Auto-generated method stub
         return false;
     }
+
+    
     
 }

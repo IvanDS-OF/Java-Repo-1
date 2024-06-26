@@ -18,8 +18,7 @@ public class Hygiene extends Product{
 
     @Override
     public boolean isCompatible(IProduct p) {
-        // TODO Auto-generated method stub
-        return false;
+        return CategoryType.HYGIENE.equals(p.getCategory());
     }
 
     @Override

@@ -18,8 +18,7 @@ public class Pets extends Product {
 
     @Override
     public boolean isCompatible(IProduct p) {
-        // TODO Auto-generated method stub
-        return false;
+        return CategoryType.PETS.equals(p.getCategory());
     }
 
     @Override

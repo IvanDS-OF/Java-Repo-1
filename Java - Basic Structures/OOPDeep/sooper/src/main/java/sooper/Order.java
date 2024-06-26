@@ -37,10 +37,20 @@ public class Order implements IOrder{
     }
 
     @Override
-    public IContainer addProduct(IProduct producto) {
+    public IContainer addProduct(IProduct product) {
+        //Instructions logic. We have to know if there is a container with avaliable space
+        //then if there are space, we can add the product. 
+
+        for (IContainer container : containers) {
+            if (container.putInside(product)) {
+                return container;
+            }
+        }
+        //It is necesary to create docimentation about this Null value
         return null;
     }
 
+    
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();

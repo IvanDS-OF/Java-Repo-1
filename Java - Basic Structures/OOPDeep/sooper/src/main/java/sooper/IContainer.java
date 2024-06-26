@@ -24,7 +24,7 @@ public interface IContainer {
 
     ContainerType getType();
 
-    boolean meter(IProduct product);
+    boolean putInside(IProduct product);
 
     boolean resists(IProduct product);
 

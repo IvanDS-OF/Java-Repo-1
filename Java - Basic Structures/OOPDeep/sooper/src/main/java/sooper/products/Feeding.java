@@ -19,8 +19,7 @@ public class Feeding extends Product{
 
     @Override
     public boolean isCompatible(IProduct p) {
-        // TODO Auto-generated method stub
-        return false;
+        return CategoryType.FEEDING.equals(p.getCategory());
     }
 
     @Override

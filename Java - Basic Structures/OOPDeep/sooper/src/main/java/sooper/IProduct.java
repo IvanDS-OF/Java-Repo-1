@@ -8,7 +8,6 @@ public interface IProduct {
 
     String getReference();
 
-
     int getWeight();
 
     int getVolume();
@@ -19,7 +18,7 @@ public interface IProduct {
 
     boolean haveSpace(IContainer container);
 
-
+    void putInside(IContainer container);
 
 
 }

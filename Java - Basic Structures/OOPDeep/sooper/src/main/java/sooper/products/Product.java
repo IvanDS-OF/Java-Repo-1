@@ -1,6 +1,9 @@
 package sooper.products;
 
+import sooper.IContainer;
 import sooper.IProduct;
+import sooper.containers.Container;
+import sooper.enums.CategoryType;
 
 public abstract class Product implements IProduct{
 
@@ -8,6 +11,8 @@ public abstract class Product implements IProduct{
     private String reference;
     private int weight;
     private int volume; 
+
+    private IContainer container;
 
 
     //Creation of a constructor
@@ -35,4 +40,15 @@ public abstract class Product implements IProduct{
         return volume;
     }
 
+
+    @Override
+    public boolean haveSpace(IContainer container) {   
+        return container.avaliableVolume() > volume;
+    }
+
+
+    @Override
+    public void putInside(IContainer container) {
+        this.container = container;
+    }
 }
