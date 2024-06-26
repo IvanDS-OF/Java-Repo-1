@@ -14,7 +14,7 @@ public class SuperMarket {
         //Lets to create all the required
         Order myOrder = new Order("Pedido 001");
 
-        IContainer bag1 = new Bag("B001", 40, 25, 0);
+        IContainer bag1 = new Bag("B001", 40, 25, 900);
         IContainer box1 = new Box("C001", 30, 50, 75);
         
         myOrder.addContainter(bag1);
@@ -23,9 +23,9 @@ public class SuperMarket {
         System.out.println("Mi pedido es: " + myOrder);
 
 
-        IProduct apples = new Fresh("APLL", 100, 1500);
+        IProduct apples = new Fresh("APLL", 1000, 1500);
         IProduct iceCream = new Frozen("ICR", 800, 1000);
-        IProduct wcPaper = new Hygiene("WCP", 500, 2500);
+        IProduct wcPaper = new Hygiene("WCP", 2500, 500);
         IProduct pears = new Fresh("PEAR", 800, 1200);
 
 

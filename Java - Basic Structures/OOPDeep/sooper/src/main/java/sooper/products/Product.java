@@ -49,4 +49,10 @@ public abstract class Product implements IProduct{
     public void putInside(IContainer container) {
         this.container = container;
     }
+
+    @Override
+    public String toString(){
+        return "Producto {categoría=" + getCategory() + ", referencia= " + reference + 
+            ", volumen= " + volume + ", contenedor= " + container.getReference() + "}" ;  
+    }
 }

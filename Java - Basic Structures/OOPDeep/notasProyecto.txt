@@ -76,6 +76,10 @@ That creates the body of the known things and the unknown things can wait.
 
 
 
+NOTES: 
+Cuando el metodo de una hija devuelve False o no da el valor deseado, va a recurrir al metodo padre
+que este a su vez va a hacer que una clase hija lo compile, siempre y cuando haya alguna otra clse e hija
+**Lo ejecutarà al que mejor lo pueda resolver. 
 
 
 
