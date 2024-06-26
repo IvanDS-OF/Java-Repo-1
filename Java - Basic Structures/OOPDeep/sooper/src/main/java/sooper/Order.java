@@ -41,9 +41,15 @@ public class Order implements IOrder{
         return null;
     }
 
-    @Override
-    public String toString(){
-        return super.toString();
-    }
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+        //This class helps us to build string did with concatentations of different things
+		sb.append("Order: " + reference + "\n");
+		for (IContainer container : containers) {
+			sb.append("\t" + container + "\n");
+		}
+		return sb.toString();
+	}
     
 }

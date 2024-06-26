@@ -1,5 +1,6 @@
 package sooper.containers;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import sooper.IContainer;
@@ -19,10 +20,15 @@ public abstract class Container implements IContainer {
     //to call the value of them
     private String reference;
     private int height;
+    private int resistance;
+
+    private Set<IProduct> products;
+
 
     public Container(String reference, int height){
         this.reference = reference;
         this.height = height;
+        products = new HashSet<IProduct>();
 
     }
 
@@ -73,6 +79,20 @@ public abstract class Container implements IContainer {
 
 
 
+    @Override
+	public String toString() {
+
+		StringBuilder sb = new StringBuilder("Contenedor " + reference + " [" + getType() +
+				"] (sup " + getSurface() + "cm2 - vol " + getVolume() + "cm3 - resistencia " + getResistance() + " g).\n");
+		if (products.isEmpty()) {
+			sb.append("\t\tvacío\n");
+		}
+		for (IProduct p : products) {
+			sb.append("\t\t" + p + "\n");
+		}
+		sb.append("\t\t>> Disponible vol " + avaliableVolume() + "cm3");
+		return sb.toString();
+	}
 
 
     
