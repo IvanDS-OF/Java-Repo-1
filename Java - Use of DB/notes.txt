@@ -1,5 +1,11 @@
 Mapeo Objeto Relacional esencial
 
+El objetivo de este apartado es conocer el ORM
+Object - Relation - Mapping
+
+
+En el mundo real, es necesario almacenar información para posteriormetne utilizarlos y hacer
+un procesamiento de ellas para obtener resultados
 
 
 
