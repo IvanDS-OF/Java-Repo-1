@@ -8,6 +8,17 @@ En el mundo real, es necesario almacenar información para posteriormetne utiliz
 un procesamiento de ellas para obtener resultados
 
 
+Primero que nada es necesario tener correindo a nuestro servidor de base de datos (XAMPP)
+Posteriormente, tenemos que tener nuestra base de datos create, el esquema, de SQL (base de datos Relacional)
+que en este caso usaremos la herrramienta MySQL Workbench para gestionar la inforamción.
+
+Luego tenemos que haces la movida de las dependencias de Hibernate, en este caso nos vamos a conectar
+usando los código XML de MAVEN y las colocaremos en el POST de nuestro proyecto. 
+
+Ahora es necesario definir la concurrencia de nuesrta base de datos, esto se tiene que hacer antes de comenzar
+a programar para evitar problemas. 
+
+
 
 
 
